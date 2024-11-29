@@ -36,7 +36,6 @@
 
 #ifndef __STM32F4xx_H
 #define __STM32F4xx_H
-
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */
@@ -77,8 +76,8 @@ extern "C" {
 /* #define STM32F410Cx */   /*!< STM32F410C8 and STM32F410CB Devices */
 /* #define STM32F410Rx */   /*!< STM32F410R8 and STM32F410RB Devices */
 /* #define STM32F411xE */   /*!< STM32F411CC, STM32F411RC, STM32F411VC, STM32F411CE, STM32F411RE and STM32F411VE Devices */
-/* #define STM32F446xx */   /*!< STM32F446MC, STM32F446ME, STM32F446RC, STM32F446RE, STM32F446VC, STM32F446VE, STM32F446ZC,
-                                 and STM32F446ZE Devices */
+ #define STM32F446xx    /*!< STM32F446MC, STM32F446ME, STM32F446RC, STM32F446RE, STM32F446VC, STM32F446VE, STM32F446ZC,
+                                 and STM32F446ZE Devices*/ 
 /* #define STM32F469xx */   /*!< STM32F469AI, STM32F469II, STM32F469BI, STM32F469NI, STM32F469AG, STM32F469IG, STM32F469BG,
                                  STM32F469NG, STM32F469AE, STM32F469IE, STM32F469BE and STM32F469NE Devices */
 /* #define STM32F479xx */   /*!< STM32F479AI, STM32F479II, STM32F479BI, STM32F479NI, STM32F479AG, STM32F479IG, STM32F479BG
@@ -171,6 +170,7 @@ extern "C" {
 #elif defined(STM32F423xx)
 #include "stm32f423xx.h"
 #else
+#define STM32F446xx
 #error "Please select first the target STM32F4xx device used in your application (in stm32f4xx.h file)"
 #endif
 
