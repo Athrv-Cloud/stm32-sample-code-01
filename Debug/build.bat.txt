@@ -1,4 +1,0 @@
-@echo off
-make all
-if errorlevel 1 exit /b 1
-copy "PROJECT_A.bin" "C:\Users\pc\BIN FOLDERS\PROJECT_A.bin"
